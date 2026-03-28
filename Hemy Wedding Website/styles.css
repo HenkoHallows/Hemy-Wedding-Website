@@ -1,0 +1,168 @@
+/* ✅ YOUR CUSTOM FONT */
+@font-face {
+    font-family: 'Brittany';
+    src: url('fonts/BrittanySignatureScript.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: 'Playfair Display', serif;
+}
+
+.card {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    background: white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+
+}
+/* LEFT */
+.left {
+    width: 50%;
+    background: #8f9c83;
+    color: #fff;
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.intro {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ✅ USING YOUR FONT HERE */
+.names {
+    font-family: 'Brittany', cursive;
+    font-size: 64px;
+    margin: 30px 0;
+    line-height: 1.2;
+}
+
+.names span {
+    display: block;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 25px 0;
+}
+
+.date {
+    letter-spacing: 4px;
+    font-size: 22px;
+    margin: 30px 0;
+}
+
+.bottom {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* RIGHT */
+.right {
+    width: 50%;
+    padding: 50px;
+    border: 1px solid #d8dfd2;
+    color: #6f7c66;
+}
+
+/* ✅ USING YOUR FONT HERE TOO */
+.quote {
+    font-family: 'Brittany', cursive;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.quote span {
+    font-size: 26px;
+}
+
+.qr-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.qr-box {
+    text-align: center;
+    width: 45%;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.qr-box:hover {
+    transform: scale(1.05);
+}
+
+.qr-img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 6px;
+    transition: box-shadow 0.2s ease;
+}
+
+.qr-box:hover .qr-img {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+}
+.details {
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .names {
+        font-size: 46px;
+    }
+
+    .quote {
+        font-size: 24px;
+    }
+
+    .qr-row {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .qr-box {
+        width: 100%;
+    }
+}
